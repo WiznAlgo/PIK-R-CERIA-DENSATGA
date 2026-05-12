@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #fbf5e9;
+  --foreground: #102a2a;
+  --toska: #00bfa6;
+  --toska-deep: #08706f;
+  --kuning: #ffc107;
+  --krem: #faf4e8;
+  --tinta: #102a2a;
+  --coral: #f08a73;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  text-rendering: optimizeLegibility;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+::selection {
+  background: var(--kuning);
+  color: var(--tinta);
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .text-pretty {
+    text-wrap: pretty;
+  }
+
+  .marker {
+    background-image: linear-gradient(
+      transparent 62%,
+      var(--kuning) 62%,
+      var(--kuning) 92%,
+      transparent 92%
+    );
+    background-repeat: no-repeat;
+    padding: 0 0.15em;
+  }
+
+  .paper-dots {
+    background-image: radial-gradient(var(--tinta) 1px, transparent 1px);
+    background-size: 22px 22px;
+  }
+
+  .organic-blob {
+    border-radius: 62% 38% 47% 53% / 41% 55% 45% 59%;
+  }
+
+  .organic-blob-alt {
+    border-radius: 38% 62% 70% 30% / 50% 40% 60% 50%;
+  }
+
+  .ticker {
+    animation: ticker 28s linear infinite;
+  }
+
+  @keyframes ticker {
+    to {
+      transform: translateX(-50%);
+    }
+  }
+}
