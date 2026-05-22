@@ -91,7 +91,7 @@ export const counselors = [
     name: "Fawas",
     className: "XI-6",
     role: "Konselor Sebaya",
-    wa: "60881027159165",
+    wa: "62881027159165",
     topics: ["Akademik", "Problem Solving", "Karier"],
     quote: "bingung itu wajar, yang penting jangan bingung sendirian.",
   },
