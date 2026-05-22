@@ -19,7 +19,7 @@ export const site = {
   shortName: "PIK-R CERIA",
   tagline: "Tempat Curhat Aman, Tumbuh Bareng Tanpa Takut Dihakimi",
   description:
-    "PIK-R CERIA DENSATGA adalah ruang konseling sebaya SMAN 3 KEDIRI. Kami siap dengerin cerita akademik, percintaan, sampai overthinking jam 2 pagi. Konsultasi awal online via Admin, lanjutan offline. Privasi 100% terjaga.",
+    "PIK-R CERIA DENSATGA adalah ruang konseling sebaya SMAN 3 KEDIRI. Kami siap dengerin cerita akademik, percintaan, sampai overthinking. Konsultasi awal online via Admin, lanjutan offline. Privasi 100% terjaga.",
   adminWa:
     "https://wa.me/6282233412942?text=Halo%20Kak%20Wisnu,%20saya%20dari%20web%20PIK-R%20CERIA.%20Mau%20mulai%20curhat",
   adminChat:
@@ -45,18 +45,18 @@ export const benefits = [
 export const counselingSteps = [
   {
     title: "Hubungi Admin",
-    description: "Klik tombol WA, cerita awal ke Kak Wisnu/Khansa.",
+    description: "Klik tombol WA, cerita awal ke Admin.",
     icon: PhoneCall,
   },
   {
     title: "Disambungkan",
     description:
-      "Admin akan mencarikan konselor sebaya yang paling cocok sama ceritamu.",
+      "Admin akan menyalurkan ke konselor sebaya yang paling cocok sama ceritamu.",
     icon: UsersRound,
   },
   {
     title: "Sesi Konseling",
-    description: "Ngobrol via WA atau janjian ketemu offline di ruang BK.",
+    description: "Ngobrol via WA atau janjian ketemu offline di Chill&Talk Room.",
     icon: MessageCircleHeart,
   },
   {

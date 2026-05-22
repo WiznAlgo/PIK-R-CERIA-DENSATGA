@@ -82,7 +82,7 @@ export default function Home() {
               <p className="text-base leading-8 text-ceria-ink/80 sm:col-span-7 sm:text-lg">
                 PIK-R CERIA DENSATGA — ruang konseling sebaya{" "}
                 <span className="font-semibold">SMAN 3 KEDIRI</span>. Dengerin
-                cerita akademik, percintaan, sampai overthinking jam 2 pagi.
+                cerita akademik, percintaan, sampai overthinking.
                 Konsultasi awal online via Admin, lanjutan offline. Rahasia,
                 gratis, dan dijaga.
               </p>

@@ -75,7 +75,7 @@ export default function CounselingFlowPage() {
           <Button asChild size="lg">
             <a href={site.adminChat} target="_blank" rel="noreferrer">
               <MessageCircleHeart className="h-5 w-5" aria-hidden="true" />
-              Chat Admin Wisnu
+              Chat Admin
             </a>
           </Button>
         </div>
