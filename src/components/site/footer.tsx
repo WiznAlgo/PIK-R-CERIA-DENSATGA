@@ -35,13 +35,13 @@ export function Footer() {
             <p className="mb-3 text-sm font-bold">Kontak resmi</p>
             <div className="grid gap-2 text-sm text-ceria-ink/65">
               <a
-                href={site.adminChat}
+                href="https://wa.me/6282233412942?text=Halo%20Kak%20Wisnu,%20saya%20dari%20web%20PIK-R%20CERIA."
                 target="_blank"
                 rel="noreferrer"
                 className="flex items-center gap-2 hover:text-ceria-dark"
               >
                 <MessageCircle className="h-4 w-4" aria-hidden="true" />
-                WA Admin Wisnu
+                WA Pengelola Web — Wisnu
               </a>
               <a
                 href="https://wa.me/6282131175512?text=Halo%20Kak%20Khansa,%20saya%20dari%20web%20PIK-R%20CERIA."
@@ -50,7 +50,7 @@ export function Footer() {
                 className="flex items-center gap-2 hover:text-ceria-dark"
               >
                 <MessageCircle className="h-4 w-4" aria-hidden="true" />
-                WA Koor Khansa
+                WA Koor PIK-R — Khansa
               </a>
             </div>
           </div>

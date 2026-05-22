@@ -10,7 +10,7 @@ export function Logo() {
       className="flex items-center gap-3 rounded-xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ceria-toska focus-visible:ring-offset-2"
       aria-label="Kembali ke Beranda PIK-R CERIA DENSATGA"
     >
-      <div className="-rotate-6 flex h-11 w-11 items-center justify-center overflow-hidden rounded-full border-2 border-ceria-ink bg-ceria-kuning shadow-[0_2px_0_var(--tinta)]">
+      <div className="flex h-11 w-11 items-center justify-center overflow-hidden rounded-full border-2 border-ceria-ink bg-ceria-kuning shadow-[0_2px_0_var(--tinta)]">
         <Image
           src={site.logoUrl}
           alt=""
