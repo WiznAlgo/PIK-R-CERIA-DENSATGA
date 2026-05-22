@@ -74,14 +74,14 @@ export default function AboutPage() {
             <div className="col-span-12 md:col-span-4">
               <p className="font-hand text-3xl text-ceria-coral">hubungi.</p>
               <h2 className="mt-1 font-display text-4xl leading-tight">
-                Dua kontak <em className="font-medium">resmi</em>, sisanya lewat
-                admin.
+                Dua kontak <em className="font-medium">resmi</em> yang bisa
+                dihubungi.
               </h2>
             </div>
             <div className="col-span-12 grid gap-4 md:col-span-8 md:grid-cols-2">
               {[
                 {
-                  label: "Admin Web",
+                  label: "Pengelola Web",
                   nama: "Wisnu",
                   no: "0822-3341-2942",
                   wa: "6282233412942",

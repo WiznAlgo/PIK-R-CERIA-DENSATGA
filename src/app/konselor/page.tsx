@@ -5,11 +5,25 @@ import { SectionHeading } from "@/components/site/section-heading";
 import { Badge } from "@/components/ui/badge";
 import { counselors } from "@/lib/site-data";
 
-function connectLink(name: string) {
-  return `https://wa.me/6282233412942?text=Halo%20Kak,%20tolong%20sambungkan%20saya%20dengan%20Kak%20${encodeURIComponent(
-    name,
-  )}`;
-}
+const cardColors = [
+  "bg-ceria-toska text-white",
+  "bg-ceria-kuning text-ceria-ink",
+  "bg-ceria-coral text-white",
+  "bg-ceria-dark text-white",
+  "bg-ceria-toska text-white",
+  "bg-ceria-kuning text-ceria-ink",
+  "bg-ceria-coral text-white",
+];
+
+const cardRotations = [
+  "-rotate-1",
+  "rotate-[1.5deg] md:translate-y-6",
+  "-rotate-[0.5deg] md:translate-y-3",
+  "rotate-1 md:translate-y-5",
+  "-rotate-[1.5deg] md:translate-y-2",
+  "rotate-[0.5deg] md:translate-y-7",
+  "-rotate-1 md:translate-y-4",
+];
 
 export default function CounselorsPage() {
   return (
@@ -28,7 +42,7 @@ export default function CounselorsPage() {
               </span>
             </>
           }
-          description="Mereka siswa juga. Dilatih buat dengerin, bukan buat ngehakimi. Pilih yang menurutmu paling nyambung — sisanya admin yang urus."
+          description="Mereka siswa juga. Dilatih buat dengerin, bukan buat ngehakimi. Pilih yang menurutmu paling nyambung — langsung chat aja."
         />
       </section>
 
@@ -38,25 +52,13 @@ export default function CounselorsPage() {
             {counselors.map((counselor, index) => (
               <article
                 key={counselor.name}
-                className={`relative flex flex-col rounded-[2rem] border-2 border-ceria-ink bg-white p-6 ${
-                  index === 0
-                    ? "-rotate-1"
-                    : index === 1
-                      ? "rotate-[1.5deg] md:translate-y-8"
-                      : "-rotate-[0.5deg] md:translate-y-4"
-                }`}
+                className={`relative flex flex-col rounded-[2rem] border-2 border-ceria-ink bg-white p-6 ${cardRotations[index % cardRotations.length]}`}
               >
                 <span className="absolute -top-3 left-6 rounded-full border-2 border-ceria-ink bg-ceria-krem px-3 py-0.5 text-xs font-bold">
                   No. 0{index + 1}
                 </span>
                 <div
-                  className={`flex h-24 w-24 items-center justify-center rounded-full border-2 border-ceria-ink font-display text-5xl ${
-                    index === 0
-                      ? "bg-ceria-toska text-white"
-                      : index === 1
-                        ? "bg-ceria-kuning text-ceria-ink"
-                        : "bg-ceria-coral text-white"
-                  }`}
+                  className={`flex h-24 w-24 items-center justify-center rounded-full border-2 border-ceria-ink font-display text-5xl ${cardColors[index % cardColors.length]}`}
                 >
                   {counselor.name.charAt(0)}
                 </div>
@@ -67,11 +69,7 @@ export default function CounselorsPage() {
                   {counselor.className} · {counselor.role}
                 </p>
                 <p className="mt-5 border-l-2 border-ceria-ink pl-3 font-display text-base italic text-ceria-ink/80">
-                  “{[
-                    "ceritamu nggak akan aku jadiin bahan ketawa, janji.",
-                    "kadang cuma butuh didengerin tanpa disuruh ‘sabar’, kan?",
-                    "patah hati itu valid. capek karena ekspektasi juga valid.",
-                  ][index]}”
+                  &ldquo;{counselor.quote}&rdquo;
                 </p>
                 <div className="mt-5 flex flex-wrap gap-1.5">
                   {counselor.topics.map((topic) => (
@@ -81,14 +79,14 @@ export default function CounselorsPage() {
                   ))}
                 </div>
                 <a
-                  href={connectLink(counselor.name)}
+                  href={`https://wa.me/${counselor.wa}?text=Halo%20Kak%20${encodeURIComponent(counselor.name)},%20saya%20dari%20web%20PIK-R%20CERIA.%20Mau%20cerita.`}
                   target="_blank"
                   rel="noreferrer"
                   className="mt-6 inline-flex items-center justify-between rounded-full border-2 border-ceria-ink px-4 py-2 text-sm font-semibold transition-all hover:bg-ceria-ink hover:text-white"
                 >
                   <span className="inline-flex items-center gap-2">
                     <MessageCircle className="h-4 w-4" aria-hidden="true" />
-                    Minta Disambungin
+                    Chat Langsung
                   </span>
                   <ArrowUpRight className="h-4 w-4" aria-hidden="true" />
                 </a>

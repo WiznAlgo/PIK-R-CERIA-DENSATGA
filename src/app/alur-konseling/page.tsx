@@ -1,9 +1,10 @@
+import Link from "next/link";
 import { MessageCircleHeart } from "lucide-react";
 
 import { PageShell } from "@/components/site/page-shell";
 import { SectionHeading } from "@/components/site/section-heading";
 import { Button } from "@/components/ui/button";
-import { counselingSteps, site } from "@/lib/site-data";
+import { counselingSteps } from "@/lib/site-data";
 
 export default function CounselingFlowPage() {
   return (
@@ -38,7 +39,7 @@ export default function CounselingFlowPage() {
                     {String(index + 1).padStart(2, "0")}
                   </p>
                   <p className="font-hand mt-1 -rotate-3 text-2xl text-ceria-coral">
-                    {["sapa", "sambung", "cerita", "lega"][index]}~
+                    {["pilih", "chat", "cerita", "lega"][index]}~
                   </p>
                 </div>
                 <div className="col-span-12 border-l-2 border-ceria-ink pl-5 sm:col-span-9 sm:pl-8">
@@ -68,15 +69,14 @@ export default function CounselingFlowPage() {
               Udah ngerti alurnya. Sekarang giliran kamu.
             </h2>
             <p className="mt-3 max-w-xl text-sm leading-6 text-white/70">
-            Kalau kamu sudah siap mulai cerita, chat admin dulu ya. Semua proses
-            tetap dimoderasi supaya aman.
+            Kalau kamu sudah siap mulai cerita, pilih konselor yang paling cocok dan langsung chat ya.
             </p>
           </div>
           <Button asChild size="lg">
-            <a href={site.adminChat} target="_blank" rel="noreferrer">
+            <Link href="/konselor">
               <MessageCircleHeart className="h-5 w-5" aria-hidden="true" />
-              Chat Admin
-            </a>
+              Pilih Konselor
+            </Link>
           </Button>
         </div>
       </section>

@@ -9,7 +9,7 @@ import {
   LibraryBig,
   LockKeyhole,
   MessageCircleHeart,
-  PhoneCall,
+  Search,
   ShieldCheck,
   UsersRound,
 } from "lucide-react";
@@ -19,11 +19,7 @@ export const site = {
   shortName: "PIK-R CERIA",
   tagline: "Tempat Curhat Aman, Tumbuh Bareng Tanpa Takut Dihakimi",
   description:
-    "PIK-R CERIA DENSATGA adalah ruang konseling sebaya SMAN 3 KEDIRI. Kami siap dengerin cerita akademik, percintaan, sampai overthinking. Konsultasi awal online via Admin, lanjutan offline. Privasi 100% terjaga.",
-  adminWa:
-    "https://wa.me/6282233412942?text=Halo%20Kak%20Wisnu,%20saya%20dari%20web%20PIK-R%20CERIA.%20Mau%20mulai%20curhat",
-  adminChat:
-    "https://wa.me/6282233412942?text=Halo%20Kak%20Wisnu,%20saya%20dari%20web%20PIK-R%20CERIA.%20Mau%20konseling",
+    "PIK-R CERIA DENSATGA adalah ruang konseling sebaya SMAN 3 KEDIRI. Kami siap dengerin cerita akademik, percintaan, sampai overthinking. Pilih konselor, langsung chat. Privasi 100% terjaga.",
   logoUrl: "/logo-ceria.svg",
   moduleDriveFolder: "/modul",
 };
@@ -44,20 +40,20 @@ export const benefits = [
 
 export const counselingSteps = [
   {
-    title: "Hubungi Admin",
-    description: "Klik tombol WA, cerita awal ke Admin.",
-    icon: PhoneCall,
+    title: "Pilih Konselor",
+    description: "Buka halaman Konselor, kenalan, dan pilih yang paling cocok sama kamu.",
+    icon: Search,
   },
   {
-    title: "Disambungkan",
+    title: "Langsung Chat",
     description:
-      "Admin akan menyalurkan ke konselor sebaya yang paling cocok sama ceritamu.",
-    icon: UsersRound,
+      "Klik tombol WA di profil konselor, langsung ngobrol tanpa perantara.",
+    icon: MessageCircleHeart,
   },
   {
     title: "Sesi Konseling",
     description: "Ngobrol via WA atau janjian ketemu offline di Chill&Talk Room.",
-    icon: MessageCircleHeart,
+    icon: UsersRound,
   },
   {
     title: "Tuntas & Aman",
@@ -68,22 +64,60 @@ export const counselingSteps = [
 
 export const counselors = [
   {
-    name: "Wisnu",
-    className: "XI-8",
-    role: "Admin Web & Konselor Sebaya",
-    topics: ["Akademik", "Motivasi", "Problem Solving"],
+    name: "Khansa",
+    className: "XI-3",
+    role: "Konselor Sebaya",
+    wa: "6282131175512",
+    topics: ["Prestasi", "Problem Solving", "Teman Curhat"],
+    quote: "kadang cuma butuh didengerin tanpa disuruh 'sabar', kan?",
   },
   {
-    name: "Khansa",
+    name: "Anggrek",
     className: "XI-2",
-    role: "Koor PIK-R & Konselor Sebaya",
-    topics: ["Prestasi", "Problem Solving", "Teman Curhat"],
+    role: "Konselor Sebaya",
+    wa: "6285855923927",
+    topics: ["Motivasi", "Self-Love", "Teman Curhat"],
+    quote: "kamu nggak harus kuat sendirian, cerita aja dulu.",
   },
   {
     name: "Aurel",
     className: "XI-10",
     role: "Konselor Sebaya",
-    topics: ["Motivasi", "Teman Curhat", "Percintaan"],
+    wa: "6285648180604",
+    topics: ["Percintaan", "Motivasi", "Teman Curhat"],
+    quote: "patah hati itu valid. capek karena ekspektasi juga valid.",
+  },
+  {
+    name: "Fawas",
+    className: "XI-6",
+    role: "Konselor Sebaya",
+    wa: "60881027159165",
+    topics: ["Akademik", "Problem Solving", "Karier"],
+    quote: "bingung itu wajar, yang penting jangan bingung sendirian.",
+  },
+  {
+    name: "Jhonatan",
+    className: "XI-10",
+    role: "Konselor Sebaya",
+    wa: "6285707395564",
+    topics: ["Motivasi", "Persahabatan", "Problem Solving"],
+    quote: "ceritamu nggak akan aku jadiin bahan ketawa, janji.",
+  },
+  {
+    name: "Wisnu",
+    className: "XI-8",
+    role: "Konselor Sebaya & Pengelola Website",
+    wa: "6282233412942",
+    topics: ["Akademik", "Motivasi", "Problem Solving"],
+    quote: "kalau dunia lagi nggak ramah, sini cerita dulu.",
+  },
+  {
+    name: "Izza",
+    className: "XI-4",
+    role: "Konselor Sebaya",
+    wa: "6282143206863",
+    topics: ["Self-Love", "Keluarga", "Teman Curhat"],
+    quote: "nggak ada cerita yang terlalu kecil buat didengerin.",
   },
 ];
 
@@ -135,7 +169,7 @@ export const pageHighlights = [
 
 export const homepageStats = [
   { value: "4", label: "langkah konseling", icon: CheckCircle2 },
-  { value: "3", label: "konselor sebaya", icon: UsersRound },
+  { value: "7", label: "konselor sebaya", icon: UsersRound },
   { value: "6", label: "modul siap dibaca", icon: LibraryBig },
   { value: "2026", label: "dikelola siswa", icon: CalendarDays },
 ];

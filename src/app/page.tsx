@@ -18,7 +18,6 @@ import {
   benefits,
   homepageStats,
   pageHighlights,
-  site,
 } from "@/lib/site-data";
 
 export default function Home() {
@@ -83,16 +82,15 @@ export default function Home() {
                 PIK-R CERIA DENSATGA — ruang konseling sebaya{" "}
                 <span className="font-semibold">SMAN 3 KEDIRI</span>. Dengerin
                 cerita akademik, percintaan, sampai overthinking.
-                Konsultasi awal online via Admin, lanjutan offline. Rahasia,
-                gratis, dan dijaga.
+                Pilih konselor, langsung chat. Rahasia, gratis, dan dijaga.
               </p>
 
               <div className="flex flex-col gap-3 sm:col-span-5">
                 <Button asChild size="lg">
-                  <a href={site.adminWa} target="_blank" rel="noreferrer">
+                  <Link href="/konselor">
                     <MessageCircleHeart className="h-5 w-5" aria-hidden="true" />
-                    Mulai Curhat via Admin
-                  </a>
+                    Pilih Konselor & Mulai Cerita
+                  </Link>
                 </Button>
                 <Button asChild size="lg" variant="outline">
                   <Link href="/modul">

@@ -2,7 +2,7 @@ import Link from "next/link";
 import { Menu, MessageCircle } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
-import { navItems, site } from "@/lib/site-data";
+import { navItems } from "@/lib/site-data";
 import { Logo } from "./logo";
 
 export function Navbar() {
@@ -26,10 +26,10 @@ export function Navbar() {
         </nav>
         <div className="flex items-center gap-2">
           <Button asChild size="sm" className="hidden sm:inline-flex">
-            <a href={site.adminChat} target="_blank" rel="noreferrer">
+            <Link href="/konselor">
               <MessageCircle className="h-4 w-4" aria-hidden="true" />
-              Chat Admin
-            </a>
+              Pilih Konselor
+            </Link>
           </Button>
           <details className="relative lg:hidden">
             <summary className="flex h-11 w-11 cursor-pointer list-none items-center justify-center rounded-full border-2 border-ceria-ink bg-transparent text-ceria-ink transition hover:bg-ceria-ink hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ceria-toska [&::-webkit-details-marker]:hidden">
@@ -48,9 +48,9 @@ export function Navbar() {
                   </Link>
                 ))}
                 <Button asChild className="mt-2 w-full">
-                  <a href={site.adminChat} target="_blank" rel="noreferrer">
-                    Chat Admin
-                  </a>
+                  <Link href="/konselor">
+                    Pilih Konselor
+                  </Link>
                 </Button>
               </nav>
             </div>
