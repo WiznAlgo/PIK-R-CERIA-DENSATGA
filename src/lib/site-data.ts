@@ -104,20 +104,20 @@ export const counselors = [
     quote: "ceritamu nggak akan aku jadiin bahan ketawa, janji.",
   },
   {
-    name: "Wisnu",
-    className: "XI-8",
-    role: "Konselor Sebaya & Pengelola Website",
-    wa: "6282233412942",
-    topics: ["Akademik", "Motivasi", "Problem Solving"],
-    quote: "kalau dunia lagi nggak ramah, sini cerita dulu.",
-  },
-  {
     name: "Izza",
     className: "XI-4",
     role: "Konselor Sebaya",
     wa: "6282143206863",
     topics: ["Self-Love", "Keluarga", "Teman Curhat"],
     quote: "nggak ada cerita yang terlalu kecil buat didengerin.",
+  },
+  {
+    name: "Wisnu",
+    className: "XI-8",
+    role: "Konselor Sebaya & Pengelola Website",
+    wa: "6282233412942",
+    topics: ["Akademik", "Motivasi", "Problem Solving"],
+    quote: "kalau dunia lagi nggak ramah, sini cerita dulu.",
   },
 ];
 
