@@ -20,8 +20,8 @@ export const site = {
   tagline: "Tempat Curhat Aman, Tumbuh Bareng Tanpa Takut Dihakimi",
   description:
     "PIK-R CERIA DENSATGA adalah ruang konseling sebaya SMAN 3 KEDIRI. Kami siap dengerin cerita akademik, percintaan, sampai overthinking. Pilih konselor, langsung chat. Privasi 100% terjaga.",
-  logoUrl: "/logo-ceria.svg",
-  moduleDriveFolder: "/modul",
+  logoUrl: "/logo_DENSATGA.jpeg",
+  moduleDriveFolder: "https://drive.google.com/drive/folders/1xDfZNggxb5-fzPdPcR5tClx7lmuYCedk",
 };
 
 export const navItems = [
@@ -126,38 +126,38 @@ export const modules = [
     title: "Dasar PIK-R",
     description: "Pondasi awal jadi remaja berencana.",
     tag: "fundamental",
-    driveUrl: "/modules/dasar-pikr.html",
+    driveUrl: "https://drive.google.com/file/d/1vxDepqU7PT8PxVUGnCqKqF7AuX4QtXS9/view?usp=drivesdk",
   },
   {
     title: "PKBR",
     description: "Pendidikan Kesehatan Reproduksi Remaja.",
     tag: "kesehatan",
-    driveUrl: "/modules/pkbr.html",
+    driveUrl: "https://drive.google.com/file/d/1F7rZuaRT5i2lo2Q6479jEFVXSFoexDSc/view?usp=drivesdk",
   },
   {
     title: "Risiko Seksualitas",
     description:
       "Pahami batasan, dampak, pencegahan HIV AIDS, dan cara menjaga diri.",
     tag: "kesehatan",
-    driveUrl: "/modules/risiko-seksualitas.html",
+    driveUrl: "https://drive.google.com/file/d/155xrck7g8PTtE9ErJOTJCLOlJE-fLAz5/view?usp=drivesdk",
   },
   {
     title: "P.U.P",
     description: "Pendewasaan Usia Perkawinan.",
     tag: "rencana",
-    driveUrl: "/modules/pup.html",
+    driveUrl: "https://drive.google.com/file/d/14A48x-xEt4fny81ZCIKw9NolIDmy8KzW/view?usp=drivesdk",
   },
   {
     title: "Life Skills",
     description: "Skill bertahan hidup ala remaja.",
     tag: "skill",
-    driveUrl: "/modules/life-skills.html",
+    driveUrl: "https://drive.google.com/file/d/15qtzB2AxPrPO_01qaMdk2pp1fkdTlm8H/view?usp=drivesdk",
   },
   {
     title: "8 Fungsi Keluarga",
     description: "Keluarga keren itu yang gimana sih?",
     tag: "keluarga",
-    driveUrl: "/modules/8-fungsi-keluarga.html",
+    driveUrl: "https://drive.google.com/file/d/1p84ozM-fmzLaKqT2XnFka4IU_ivesiHO/view?usp=drivesdk",
   },
 ];
 

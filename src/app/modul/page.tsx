@@ -37,7 +37,7 @@ export default function ModulesPage() {
               </p>
             </div>
             <Button asChild variant="outline">
-              <a href={site.moduleDriveFolder}>
+              <a href={site.moduleDriveFolder} target="_blank" rel="noreferrer">
                 <FolderOpen className="h-4 w-4" aria-hidden="true" />
                 Buka Folder Drive
               </a>
@@ -78,6 +78,8 @@ export default function ModulesPage() {
                 </p>
                 <a
                   href={module.driveUrl}
+                  target="_blank"
+                  rel="noreferrer"
                   aria-label={`Buka Google Drive ${module.title}`}
                   className="col-span-12 inline-flex items-center justify-between gap-2 self-center rounded-full border-2 border-ceria-ink px-4 py-2 text-sm font-semibold transition-all hover:bg-ceria-ink hover:text-white sm:col-span-2 sm:justify-end sm:border-0 sm:px-0 sm:py-0 sm:hover:bg-transparent sm:hover:text-ceria-dark"
                 >
