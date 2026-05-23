@@ -93,7 +93,7 @@ export const counselors = [
     role: "Konselor Sebaya",
     wa: "62881027159165",
     topics: ["Akademik", "Problem Solving", "Karier"],
-    quote: "Kukira keras ternyata kertas.",
+    quote: "bingung itu wajar, yang penting jangan bingung sendirian.",
   },
   {
     name: "Jhonatan",
