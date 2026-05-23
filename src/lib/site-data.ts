@@ -65,7 +65,7 @@ export const counselingSteps = [
 export const counselors = [
   {
     name: "Khansa",
-    className: "XI-3",
+    className: "XI-2",
     role: "Konselor Sebaya",
     wa: "6282131175512",
     topics: ["Prestasi", "Problem Solving", "Teman Curhat"],
@@ -105,7 +105,7 @@ export const counselors = [
   },
   {
     name: "Izza",
-    className: "XI-4",
+    className: "XI-3",
     role: "Konselor Sebaya",
     wa: "6282143206863",
     topics: ["Self-Love", "Keluarga", "Teman Curhat"],
@@ -116,8 +116,8 @@ export const counselors = [
     className: "XI-8",
     role: "Konselor Sebaya & Pengelola Website",
     wa: "6282233412942",
-    topics: ["Akademik", "Motivasi", "Problem Solving"],
-    quote: "kalau dunia lagi nggak ramah, sini cerita dulu.",
+    topics: ["Akademik", "Karier", "Problem Solving"],
+    quote: "kalau bingung, ayo pikirin bareng-bareng. nggak harus sendirian.",
   },
 ];
 
