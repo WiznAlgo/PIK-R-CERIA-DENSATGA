@@ -158,7 +158,7 @@ export default function Home() {
               ke bantuan yang paling kamu perlukan.
             </p>
           </div>
-          <div className="grid gap-4 md:grid-cols-3">
+          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
             {pageHighlights.map((item) => (
               <Link key={item.href} href={item.href}>
                 <Card className="h-full transition hover:-translate-y-1 hover:rotate-1">
@@ -166,11 +166,11 @@ export default function Home() {
                     <div className="mb-2 flex h-12 w-12 items-center justify-center rounded-full border-2 border-ceria-ink bg-ceria-kuning text-ceria-ink">
                       <item.icon className="h-5 w-5" aria-hidden="true" />
                     </div>
-                    <CardTitle className="font-display text-3xl font-light">
+                    <CardTitle className="font-display text-2xl font-light">
                       {item.title}
                     </CardTitle>
                     <CardDescription className="text-ceria-ink/65">
-                      Klik buat lihat detailnya.
+                      {item.description}
                     </CardDescription>
                   </CardHeader>
                   <CardContent>

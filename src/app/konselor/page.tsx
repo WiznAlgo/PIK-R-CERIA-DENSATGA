@@ -71,6 +71,7 @@ export default function CounselorsPage() {
                 <p className="mt-5 border-l-2 border-ceria-ink pl-3 font-display text-base italic text-ceria-ink/80">
                   &ldquo;{counselor.quote}&rdquo;
                 </p>
+
                 <div className="mt-5 flex flex-wrap gap-1.5">
                   {counselor.topics.map((topic) => (
                     <Badge key={topic} variant="default" className="normal-case">
