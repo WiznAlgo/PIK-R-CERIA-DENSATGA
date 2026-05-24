@@ -2,5 +2,5 @@
   "name": "PIK-R CERIA",
   "description": "Website Pusat Informasi dan Konseling Remaja (PIK-R) Ceria",
   "requestFramePermissions": [],
-  "majorCapabilities": []
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
 }

@@ -1,5 +1,6 @@
 import {
   BookOpen,
+  Bot,
   Brain,
   CalendarDays,
   CheckCircle2,
@@ -28,6 +29,7 @@ export const navItems = [
   { label: "Beranda", href: "/" },
   { label: "Alur Konseling", href: "/alur-konseling" },
   { label: "Konselor", href: "/konselor" },
+  { label: "Tanya CERIA", href: "/teman-curhat" },
   { label: "Modul", href: "/modul" },
   { label: "Tentang", href: "/tentang" },
 ];
@@ -62,14 +64,25 @@ export const counselingSteps = [
   },
 ];
 
-export const counselors = [
+export interface Counselor {
+  name: string;
+  className: string;
+  role: string;
+  wa: string;
+  topics: string[];
+  quote: string;
+  aiBackground?: string;
+}
+
+export const counselors: Counselor[] = [
   {
     name: "Khansa",
     className: "XI-2",
-    role: "Konselor Sebaya",
+    role: "Duta GenRe & Konselor Sebaya",
     wa: "6282131175512",
-    topics: ["Prestasi", "Problem Solving", "Teman Curhat"],
+    topics: ["Sosial", "Karier", "Pribadi"],
     quote: "kadang cuma butuh didengerin tanpa disuruh 'sabar', kan?",
+    aiBackground: "Duta GenRe Kota Kediri dan Duta Smaga 2025-2026",
   },
   {
     name: "Anggrek",
@@ -78,6 +91,7 @@ export const counselors = [
     wa: "6285855923927",
     topics: ["Motivasi", "Self-Love", "Teman Curhat"],
     quote: "kamu nggak harus kuat sendirian, cerita aja dulu.",
+    aiBackground: "Ketua umum ekskul broadcasting, sering jadi MC di berbagai acara",
   },
   {
     name: "Aurel",
@@ -86,14 +100,16 @@ export const counselors = [
     wa: "6285648180604",
     topics: ["Percintaan", "Motivasi", "Teman Curhat"],
     quote: "patah hati itu valid. capek karena ekspektasi juga valid.",
+    aiBackground: "Sangat fleksibel seperti Khansa, namun lebih ke arah sosial karena pengetahuannya belum seluas Khansa",
   },
   {
     name: "Fawas",
     className: "XI-6",
     role: "Konselor Sebaya",
     wa: "62881027159165",
-    topics: ["Akademik", "Problem Solving", "Karier"],
+    topics: ["Akademik", "Problem Solving", "Prestasi"],
     quote: "bingung itu wajar, yang penting jangan bingung sendirian.",
+    aiBackground: "Peserta OSN Fisika, jago banget urusan akademik dan problem solving",
   },
   {
     name: "Jhonatan",
@@ -102,6 +118,7 @@ export const counselors = [
     wa: "6285707395564",
     topics: ["Motivasi", "Persahabatan", "Problem Solving"],
     quote: "ceritamu nggak akan aku jadiin bahan ketawa, janji.",
+    aiBackground: "Orangnya agamis (Katolik) dan bestie-able banget",
   },
   {
     name: "Izza",
@@ -110,6 +127,7 @@ export const counselors = [
     wa: "6282143206863",
     topics: ["Self-Love", "Keluarga", "Teman Curhat"],
     quote: "nggak ada cerita yang terlalu kecil buat didengerin.",
+    aiBackground: "Ketua umum DENSATGA, sangat berjiwa pemimpin",
   },
   {
     name: "Wisnu",
@@ -118,6 +136,7 @@ export const counselors = [
     wa: "6282233412942",
     topics: ["Akademik", "Karier", "Problem Solving"],
     quote: "kalau bingung, ayo pikirin bareng-bareng. nggak harus sendirian.",
+    aiBackground: "Pengelola website ini dan seorang pebisnis, sekaligus peserta OSN Informatika",
   },
 ];
 
@@ -162,9 +181,10 @@ export const modules = [
 ];
 
 export const pageHighlights = [
-  { title: "Alur jelas", href: "/alur-konseling", icon: ClipboardList },
-  { title: "Konselor terkurasi", href: "/konselor", icon: UsersRound },
-  { title: "Modul Google Drive", href: "/modul", icon: BookOpen },
+  { title: "Tanya CERIA", href: "/teman-curhat", icon: Bot, description: "Bingung konseling ke siapa?? Ke AI kamu dulu yukk nanti dibantu diarahkan" },
+  { title: "Alur Jelas", href: "/alur-konseling", icon: ClipboardList, description: "Tata cara konseling padat & jelas." },
+  { title: "Konselor Terkurasi", href: "/konselor", icon: UsersRound, description: "Pilih langsung kakak kelas yang pas." },
+  { title: "Modul Tersedia", href: "/modul", icon: BookOpen, description: "Bacaan singkat ala PIK-R." },
 ];
 
 export const homepageStats = [
